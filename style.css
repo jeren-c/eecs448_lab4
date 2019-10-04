@@ -25,7 +25,7 @@ table {
   }
   
 th, td {
-    border: 2px solid gray;
+    border: 2px solid black;
     margin: 1pt;
     padding: 3px 10px;
     text-align: left;
