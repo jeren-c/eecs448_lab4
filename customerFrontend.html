@@ -7,9 +7,10 @@
 </head>
 
 <body>
+    <br>
     <h1>Welcome to my fantastic cake store</h1>
     <p class = "instructions">Please enter the quantity of each type of cake you would like to purchase. 
-        Then select your preferred shipping method.
+        Enter your username (example@domain.com) and password then select your preferred shipping method.
     </p>
     <br>
     <form action="customerBackend.php" method="post" onsubmit="return validate()">
@@ -33,8 +34,8 @@
     <br> <br> <br>
 
     <p>Enter your information below: </p><br>
-    Username : <input name="user" id="user" type="text"><br><br>
-    Email: <input name="pw" id="pw" type="text"> <br><br>
+    Username: <input name="user" id="user" type="text"><br><br>
+    Password: <input name="pw" id="pw" type="text"> <br><br>
 
     <p>Select the shipping method you would like:</p>
     <input type="radio" name="shipping" value="week"> 7 day shipping (free!)<br>

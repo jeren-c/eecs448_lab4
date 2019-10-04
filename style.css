@@ -1,5 +1,6 @@
 h1 {
     font-family: fantasy;
+    font-size: 40pt;
 }
 
 p {
@@ -10,3 +11,22 @@ p.instructions {
     font-size: 16pt;
     
 }
+
+body {
+    background-color: #fee7ff
+}
+
+td[colspan] {
+    text-align: center;
+}
+  
+table {
+    background-color: white;
+  }
+  
+th, td {
+    border: 2px solid gray;
+    margin: 1pt;
+    padding: 3px 10px;
+    text-align: left;
+  }
