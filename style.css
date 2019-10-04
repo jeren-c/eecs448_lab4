@@ -24,7 +24,17 @@ table {
     background-color: white;
   }
   
-th, td {
+th {
+    font-size: 14pt;
+    border: 2px solid black;
+    margin: 1pt;
+    padding: 3px 10px;
+    text-align: left;
+    background-color: lightblue;
+
+} 
+
+td {
     border: 2px solid black;
     margin: 1pt;
     padding: 3px 10px;
