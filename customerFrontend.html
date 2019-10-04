@@ -13,7 +13,7 @@
         Enter your username (example@domain.com) and password then select your preferred shipping method.
     </p>
     <br>
-    <form action="customerBackend.php" method="post" onsubmit="return validate()">
+    <form action="customerBackend.php" onsubmit="return validate()"  method="post">
     Standard Chocolate Cake ($15.00):
     <input name="choco" id="choco" type="number">
     <br>
@@ -43,7 +43,7 @@
     <input type="radio" name="shipping" value="3-day"> 3 day shipping ($5.00)<br><br>
     <button type="button" value="Reset" onclick="reset()">Reset</button>
 
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit" onsubmit="validate()">
 
     </form>
 </body>
