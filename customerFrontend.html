@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title> </title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <h1>Welcome to my fantastic cake store</h1>
+    <p class = "instructions">Please enter the quantity of each type of cake you would like to purchase. 
+        Then select your preferred shipping method.
+    </p>
+    <br>
+    <form action="customerBackend.php" method="post" onsubmit="return validate()">
+    Standard Chocolate Cake ($20.99):
+    <input name="choco" id="choco" type="number">
+    <br>
+    <br>
+
+    Sweet Strawberry on Vanilla ($22.99):
+    <input name="vanilla" id="vanilla" type="number">
+    <br>
+    <br>
+
+    Peanut Butter and Recess Delight ($29.99):
+    <input name="peanut" id="peanut" type="number">
+    <br>
+    <br>
+
+    Mint Chocolate Chip Drizzle ($32.99):
+    <input name="mint" id="mint" type="number">
+    <br> <br> <br>
+
+    <p>Enter your information below: </p><br>
+    Username : <input name="user" id="user" type="text"><br><br>
+    Email: <input name="pw" id="pw" type="text"> <br><br>
+
+    <p>Select the shipping method you would like:</p>
+    <input type="radio" name="shipping" value="week"> 7 day shipping (free!)<br>
+    <input type="radio" name="shipping" value="overnight"> Overnight shipping ($50.00)<br>
+    <input type="radio" name="shipping" value="three"> 3 day shipping ($5.00)<br><br>
+    <button type="button" value="Reset" onclick="reset()">Reset</button>
+
+    <input type="submit" name="submit" value="Submit">
+
+    </form>
+</body>
+<script>
+function reset()
+{
+    document.getElementById("choco").value = null;
+    document.getElementById("vanilla").value = null;
+    document.getElementById("mint").value = null;
+    document.getElementById("peanut").value = null;    
+    document.getElementById("pw").value = null;
+    document.getElementById("user").value = null;
+    document.getElementById("shipping").value = null;
+}
+
+function validate()
+{
+    let choco = document.getElementById("choco").value;
+    let vanilla = document.getElementById("vanilla").value;
+    let mint = document.getElementById("mint").value ;
+    let peanut = document.getElementById("peanut").value;   
+    let user = document.getElementById("user").value;   
+    let email = document.getElementById("email").value;   
+    let shipping = document.getElementById("shipping").value;   
+
+    if ((choco == null && vanilla == null && mint == null && peanut && null )
+    || shipping == null || user == null || email == null || (choco <0 || vanilla<0 || mint <0 || peanut <0))
+    {
+        return false;
+    }
+    return true;
+}
+</script>
+</html>
