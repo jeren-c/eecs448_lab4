@@ -9,18 +9,18 @@ $shipping = $_POST["shipping"];
 $shipCost = 0;
 
 $subtotal = ($choco * 15) + ($vanilla * 20) + ($peanut * 30) + ($mint * 32);
-if ($shipping == "overnight")
+if ($shipping == "Overnight")
 {
     $subtotal = $subtotal + 50;
     $shipCost = 50;
 }
-else if ($shipping == "three")
+else if ($shipping == "3-day")
 {
     $subtotal = $subtotal + 5;
     $shipCost = 5;
 }
 
-echo "<br>Thank you for your purchase. Here is a copy of your receipt";
+echo "<br>Thank you for your purchase. Here is a copy of your receipt<br>";
 
 echo "<table>";
 echo "<tr>";

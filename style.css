@@ -16,7 +16,7 @@ body {
     background-color: #fee7ff
 }
 
-td[colspan] {
+th[colspan], td[colspan] {
     text-align: center;
 }
   
