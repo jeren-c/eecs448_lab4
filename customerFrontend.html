@@ -2,18 +2,17 @@
 <head>
     <title>Cake order form</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="formChecker.js"></script>
 
 </head>
 
 <body>
     <br>
     <h1>Welcome to my fantastic cake store</h1>
-    <p class = "instructions">Please enter the quantity of each type of cake you would like to purchase. 
+    <p class = "instructions">Please enter the quantity of each type of cake you would like to purchase.
         Enter your username (example@domain.com) and password then select your preferred shipping method.
     </p>
     <br>
-    <form action="customerBackend.php" method="post">
+    <form  action="customerBackend.php" onsubmit="return validate();" method="post" name="form">
     Standard Chocolate Cake ($15.00):
     <input name="choco" id="choco" type="number">
     <br>
@@ -43,9 +42,10 @@
     <input type="radio" name="shipping" value="3-day"> 3 day shipping ($5.00)<br><br>
     <button type="button" value="Reset" onclick="reset()">Reset</button>
 
-    <input type="submit" name="submit" value="Submit" onsubmit="validate()">
+    <input type="submit" value="submit">
 
     </form>
+    <script type="text/javascript" src="formChecker.js"></script>
 </body>
 
 </html>
