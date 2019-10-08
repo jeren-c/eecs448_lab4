@@ -24,6 +24,11 @@ function validate()
         alert("You must purchase at least one cake!");
         return false;
     }
+    if (choco.length == 0 || vanilla.length == 0 || mint.length == 0  || peanut.length == 0 )
+    {
+        alert("Put 0 if you are not ordering that type of cake. You can't leave the field blank");
+        return false;
+    }
     if(shipping.length == 0  || user.length == 0 || password.length== 0)
     {
         alert("Error, the username and password and shipping option must be entered");
