@@ -32,7 +32,7 @@ function validate()
     if(!user.includes(".com") || !user.includes("@"))
     {
         alert("Error, your username is not in the form of email@domain.com");
-        return false;
+        preventDefault();
     }
 
     return true;
